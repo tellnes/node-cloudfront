@@ -21,4 +21,4 @@ cf.listDistributions(function(err, list, info) {
 
 ## License
 
-[MIT](https://github.com/tellnes/cloudfront/blob/master/LICENSE)
+[MIT](https://github.com/tellnes/node-cloudfront/blob/master/LICENSE)
