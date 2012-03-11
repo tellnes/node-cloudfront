@@ -2,6 +2,7 @@
   "author": "Christian Tellnes <christian@tellnes.no> (http://christian.tellnes.com)",
   "name": "cloudfront",
   "description": "Amazon AWS CloudFront client for Node.js",
+  "homepage": "https://github.com/tellnes/node-cloudfront",
   "keywords": [
     "aws",
     "cloudfront",
@@ -9,6 +10,7 @@
   ],
   "version": "0.0.1",
   "repository": {
+    "type": "git",
     "url": "git://github.com/tellnes/node-cloudfront.git"
   },
   "main": "lib/",
