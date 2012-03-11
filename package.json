@@ -1,7 +1,7 @@
 {
   "author": "Christian Tellnes <christian@tellnes.no> (http://christian.tellnes.com)",
   "name": "cloudfront",
-  "description": "AWS CloudFront client for Node.js",
+  "description": "Amazon AWS CloudFront client for Node.js",
   "keywords": [
     "aws",
     "cloudfront",
