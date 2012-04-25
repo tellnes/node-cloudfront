@@ -9,7 +9,7 @@ cf.getOAI(process.argv[2], function(err, oai) {
     if (err) {
       console.error(err);
     } else {
-      console.log(arguments);
+      console.log('Deleted');
     }
   });
 });
