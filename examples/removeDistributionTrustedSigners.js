@@ -6,10 +6,10 @@ var cf = cloudfront.createClient(process.env.AWS_KEY, process.env.AWS_SECRET);
 cf.getDistributionConfig(process.argv[2], function(err, config) {
   if (err) throw err;
 
-
-  config.trustedSigners.push.apply(config.trustedSigners, process.argv.slice(3));
-
-
+  var remove = process.argv.slice(3);
+  config.trustedSigners = config.trustedSigners.filter(function(signer) {
+    return !~remove.indexOf(signer);
+  });
 
   console.log(util.inspect(config, false, 3, true));
   console.log(cf.generateDistributionXml(config));
