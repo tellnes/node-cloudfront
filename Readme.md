@@ -18,6 +18,7 @@ cf.listDistributions(function(err, list, info) {
 
 ```
 
+Please take a look at the examples in the example folder.
 
 ## License
 
