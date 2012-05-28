@@ -7,7 +7,8 @@ cf.getDistributionConfig(process.argv[2], function(err, config) {
   if (err) throw err;
 
 
-  config.trustedSigners.push.apply(config.trustedSigners, process.argv.slice(3));
+  config.defaultCacheBehavior.trustedSigners.enabled = true
+  ;[].push.apply(config.defaultCacheBehavior.trustedSigners, process.argv.slice(3));
 
 
 
