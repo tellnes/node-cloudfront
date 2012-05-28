@@ -1,5 +1,9 @@
 # Amazon CloudFront client for Node.js
 
+Implements all the functionality in CloudFront version 2012-05-05. In addition, is there a `getPrivateUrl` method to create signed urls.
+
+Please take a look at the examples folder.
+
 ## How to Install
 
     npm install cloudfront
