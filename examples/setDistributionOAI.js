@@ -1,8 +1,9 @@
-var cloudfront = require('..');
+var cloudfront = require('..')
+, inspect = require('eyes').inspector({maxLength: -1})
 
 var cf = cloudfront.createClient(process.env.AWS_KEY, process.env.AWS_SECRET);
 
-cf.getDistributionConfig(process.argv[2], function(err, config) {
+cf.getDistributionConfig(process.argv[2], function(err, config, info) {
   if (err) throw err;
 
   var id = process.argv[4] || config.defaultCacheBehavior.targetOriginId
@@ -16,12 +17,13 @@ cf.getDistributionConfig(process.argv[2], function(err, config) {
 
   origin.originAccessIdentity = process.argv[3];
 
-  console.log(config);
-  console.log(cf.generateDistributionXml(config));
+
+  inspect(config);
+  inspect(cf.generateDistributionXml(config));
 
   cf.setDistributionConfig(process.argv[2], config, function(err, config2) {
     if (err) throw err;
 
-    console.log(config2);
+    inspect(config2);
   });
 });
