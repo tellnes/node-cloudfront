@@ -24,5 +24,8 @@
   "optionalDependencies": {},
   "engines": {
     "node": "*"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com/"
   }
 }
