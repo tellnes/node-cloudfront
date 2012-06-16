@@ -13,6 +13,10 @@
     "type": "git",
     "url": "git://github.com/tellnes/node-cloudfront.git"
   },
+  "contributors": [
+    "Christian Tellnes <christian@tellnes.no> (http://christian.tellnes.com)",
+    "Alex Vasilenko (https://github.com/mente)"
+  ],
   "main": "lib/",
   "dependencies": {
     "data2xml": "~0.4.0",
