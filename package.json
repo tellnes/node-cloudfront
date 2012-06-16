@@ -13,10 +13,17 @@
     "type": "git",
     "url": "git://github.com/tellnes/node-cloudfront.git"
   },
+  "bugs": {
+    "url": "https://github.com/tellnes/node-cloudfront/issues"
+  },
   "contributors": [
     "Christian Tellnes <christian@tellnes.no> (http://christian.tellnes.com)",
     "Alex Vasilenko (https://github.com/mente)"
   ],
+  "licenses": {
+    "type": "MIT",
+    "url": "https://github.com/tellnes/node-cloudfront/blob/master/LICENSE"
+  },
   "main": "lib/",
   "dependencies": {
     "data2xml": "~0.4.0",
