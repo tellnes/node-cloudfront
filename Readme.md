@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/tellnes/node-cloudfront.png)](http://travis-ci.org/tellnes/node-cloudfront)
 # Amazon CloudFront client for Node.js
 
 Implements all the functionality in CloudFront version 2012-05-05. In addition, is there a `getPrivateUrl` method to create signed urls.
