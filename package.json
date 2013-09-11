@@ -27,7 +27,7 @@
   "main": "lib/",
   "dependencies": {
     "data2xml": "~0.9.0",
-    "xml2js": "~0.1.14"
+    "xml2js": "~0.2.8"
   },
   "devDependencies": {
     "eyes": "~0.1.7"
