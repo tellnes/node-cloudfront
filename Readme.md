@@ -22,6 +22,17 @@ cf.listDistributions(function(err, list, info) {
 
 ```
 
+Using STS session token
+
+```
+var cloudfront = require('cloudfront');
+
+var cf = cloudfront.createClient('access key id', 'access key secret', 'session token');
+
+...
+
+```
+
 Please take a look at the examples in the example folder.
 
 ## License
